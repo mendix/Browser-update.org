@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="BrowserUpdate.widget.BrowserUpdate" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+	<name>BrowserUpdate.org</name>
+	<description>BrowserUpdate.org loads a notification in the browser window, telling the user he or she is using an outdated browser.</description>
+
+	<icon></icon>
+
+	<properties>
+		<property key="isTest" type="boolean" defaultValue="true">
+			<caption>Testmode</caption>
+			<category>Settings</category>
+			<description>Toggle testmode to yes will always show the notification.</description>
+		</property>
+		<property key="ieversion" type="enumeration" defaultValue="v9">
+			<caption>Internet Explorer</caption>
+			<category>Settings</category>
+			<description>Show notification for versions</description>
+			<enumerationValues>
+				<enumerationValue key="v7">&lt;=7</enumerationValue>
+				<enumerationValue key="v8">&lt;=8</enumerationValue>
+				<enumerationValue key="v9">&lt;=9</enumerationValue>
+				<enumerationValue key="v10">&lt;=10</enumerationValue>
+			</enumerationValues>
+		</property>
+		<property key="ffversion" type="enumeration" defaultValue="v25">
+			<caption>Firefox</caption>
+			<category>Settings</category>
+			<description>Show notification for versions</description>
+			<enumerationValues>
+				<enumerationValue key="v20">&lt;=20</enumerationValue>
+				<enumerationValue key="v25">&lt;=25</enumerationValue>
+				<enumerationValue key="v30">&lt;=30</enumerationValue>
+				<enumerationValue key="v35">&lt;=35</enumerationValue>
+			</enumerationValues>
+		</property>
+		<property key="opversion" type="enumeration" defaultValue="v121">
+			<caption>Opera</caption>
+			<category>Settings</category>
+			<description>Show notification for versions</description>
+			<enumerationValues>
+				<enumerationValue key="v121">&lt;=12.1</enumerationValue>
+				<enumerationValue key="v15">&lt;=15</enumerationValue>
+				<enumerationValue key="v20">&lt;=20</enumerationValue>
+				<enumerationValue key="v25">&lt;=25</enumerationValue>
+			</enumerationValues>
+		</property>
+		<property key="saversion" type="enumeration" defaultValue="v7">
+			<caption>Safari</caption>
+			<category>Settings</category>
+			<description>Show notification for versions</description>
+			<enumerationValues>
+				<enumerationValue key="v5">&lt;=5</enumerationValue>
+				<enumerationValue key="v51">&lt;=5.1</enumerationValue>
+				<enumerationValue key="v6">&lt;=6</enumerationValue>
+				<enumerationValue key="v7">&lt;=7</enumerationValue>
+			</enumerationValues>
+		</property>
+	</properties>
+</widget>
+
